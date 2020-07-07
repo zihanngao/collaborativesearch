@@ -1,0 +1,79 @@
+body{
+    background: none transparent;
+    margin: 0;
+    overflow:hidden;
+    padding:0;
+}
+#most-visited{
+    margin: 0;
+    text-align: center;
+}
+#mv-tiles{
+    height: 276px;
+    line-height: 146px;
+    font-size: 0;
+    margin: 0;
+    position: absolute;
+    transition: opacity 1s;
+}
+
+#mv-tiles .mv-tile{
+    border:1px solid rgba(150,150,150,0.3);
+    background: rgb(242,242,242);
+    border-radius: 2px;
+    height: 128px
+    line-height: 100%;
+    margin: 0 8px;
+    width: 154px;
+}
+.mv-tile{
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    opacity: 1;
+    outline:0 ;/*outline画在 <' border '> 外面。outlines相关属性不占据布局空间，不会影响元素的尺寸；*/
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    white-space: nowrap;
+}
+#mv-tiles a{
+    color:inherit;
+    text-decoration: none;
+}
+.mv-favicon{
+    background-size: 16px;
+    height: 16px;
+    left: 7px;
+    margin: 0;
+    pointer-events: none;
+    position: absolute;
+    top:7px;
+    width: 16px;
+}
+.mv-title{
+    -webkit-mask-image: linear-gradient(to right, #000, #000, 100px, transparent);
+    height: 15px;
+    left: 31px;
+    line-height: 14px;
+    padding: 0;
+    top:8px;
+    width: 120px;
+    border: none;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: clip;
+}
+.mv-thumb{
+    border-radius: 2px;
+    height:128px;
+    left:3px;
+    top:31px;
+    width:148px;
+    border: none;
+    cursor:pointer;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}

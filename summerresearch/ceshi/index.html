@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+</head>
+<body>
+<div class id="mngb">
+<div id="gb" class="gb_T">
+    <div id="gb_2">
+        <div>Hawen</div>
+        <div class="icon"><a href="#">Gmail</a></div>
+        <div class="icon"><a href="#">图片</a></div>
+        <div class="icon"><a href="#"><img src="./img/message.png"></a></div>
+        <div class="icon"><a href="#"><img src="./img/home16.png"></a></div>
+        <div class="icon"><a href="#"><img src="./img/man.png"></a></div>
+    </div>
+</div>
+</div>
+<div class id="lga">
+    <img src="img/1.png">
+    <div id="logo-sub">简体中文</div>
+</div>
+<form action="#" id="f" method="get">
+    <div class="fkbx">
+        <div id="fkbx-text">在google上搜素或输入网址</div>
+        <input id="q">
+    </div>
+</form>
+<div class="mv-hide">
+    <div id="mv-tittle">
+        <iframe id="mv-single" src="single.html"></iframe>
+    </div>
+</div>
+<div id="prm-pt"></div>
+</body>
+<script>
+    window.onload=function(){
+        var input=document.getElementsByClassName("fkbx")
+        var form=document.getElementById("f")
+        input.onclick=function(){
+            input.style.visibility="hidden";
+        }
+    }
+</script>
+</html>
